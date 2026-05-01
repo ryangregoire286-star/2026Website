@@ -1,3 +1,6 @@
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Body from "./Body.tsx";
+
 const Header = () => {
 
     return (
@@ -6,7 +9,25 @@ const Header = () => {
                 <div>
                     <a>{UpperName("Ryan James")}</a>
                 </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                            <a href="/About">About</a>
+                            <a href="/Contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
             </header>
+
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Body/>}></Route>
+                </Routes>
+            </BrowserRouter>
+
         </>
     )
 }
