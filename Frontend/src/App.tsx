@@ -5,10 +5,10 @@ import Header from "./Components/Header.tsx";
 
 const App = () => {
 
-    const [data, useData] = useState("");
+    const [data, setData] = useState("");
 
     axios.get("http://localhost:3000").then(e => {
-        useData(e.data);
+        setData(e.data);
     });
 
     return (
