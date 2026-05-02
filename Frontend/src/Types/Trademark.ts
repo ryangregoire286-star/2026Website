@@ -1,0 +1,1 @@
+export const Trademark = "Ryan James | ";

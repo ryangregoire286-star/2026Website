@@ -11,13 +11,15 @@ header {
 body {
     background-color: rgb(31, 54, 39);
     text-align: center;
+    height:500px;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 200px
+    top: 200px;
+    line-height: 1rem;
 }
 
 h2 {

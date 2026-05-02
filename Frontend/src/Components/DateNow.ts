@@ -1,0 +1,1 @@
+export const Now: string = new Date().toLocaleDateString()

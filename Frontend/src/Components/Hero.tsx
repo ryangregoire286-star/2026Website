@@ -1,4 +1,6 @@
 import {AboutMe} from "../Types/MiddleHeroTypeText.ts";
+import FooterInfo from "./FooterInfo.tsx";
+
 
 function Hero (props: {title: string, years: number}) {
 
@@ -52,13 +54,16 @@ function Hero (props: {title: string, years: number}) {
 
             <h3 style={{
                 fontFamily: "sans-serif",
-                width: 700,
-                marginTop:400,
+                width: 900,
+                position: "relative",
+                top:300,
                 margin: "0 auto",
                 fontSize: 15,
+                lineHeight: 10,
+
                 textAlign: "center"
             }}>{AboutMe.toUpperCase()}</h3>
-
+            <FooterInfo/>
         </div>
     )
 }
