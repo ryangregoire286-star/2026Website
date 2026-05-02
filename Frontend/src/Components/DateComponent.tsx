@@ -5,7 +5,6 @@ const DateComponent = () => {
     return (
         <div>
             <p>{Trademark} {Now}</p>
-
         </div>
     )
 }

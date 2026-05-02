@@ -1,5 +1,6 @@
 import {Fragment, useState} from "react";
 import axios from 'axios'
+import MostUsedLanguages from "./MostUsedLanguages.tsx";
 
 const Body = () => {
 
@@ -11,6 +12,7 @@ const Body = () => {
     return (
         <Fragment>
             <h2>{data}</h2>
+            <MostUsedLanguages/>
         </Fragment>
     )
 
